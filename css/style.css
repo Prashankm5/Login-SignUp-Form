@@ -1,0 +1,166 @@
+/* Custom Font */
+@font-face {
+    font-family: poppins;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: poppins;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+
+/* Root Elements */
+:root{
+    --mainColor: #e2Bb00;
+    --blackColor: #222222;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+}
+
+.form{
+    width: 350px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 0 0 10px #cfcfcf;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.form .formLogo {
+    width: 220px;
+}
+
+.form.formHeading{
+    font-size: 20px;
+    color: #222222;
+    margin: 10px 0;
+}
+
+.otherOptions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.otherOptions .option {
+    width: 150px;
+    display: flex;
+    padding: 6px 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: 0 0 4px #cfcfcf; 
+    border-radius: 5px;
+
+}
+
+.otherOptions .option:hover {
+    box-shadow: 0 0 4px #cfcfcf;  
+}
+
+.otherOptions .option img {
+    width: 20px;
+}
+
+.otherOptions .option span {
+    font-size: 15px;
+    color: #222222;
+} 
+
+.inputBox{
+    width: 100%;
+    height: 45px;
+    margin: 15px 0;
+    background: #f9f9f9;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 4px cfcfcf;
+    overflow: hidden;
+}
+
+
+.inputBox:first-child {
+    margin-top: 20px;
+}
+
+
+.inputBox .input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding-left: 15px;
+    font-size: 15px;
+    color: #222222;
+    border: px;
+}
+
+.inputBox .input:focus {
+    border: 1px solid var(--mainColor);
+}
+
+
+
+.inputBox .input::placeholder {
+    color: #444444;
+}
+
+.checkBoxSec {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 25px 0;
+    padding-left: 5px;
+}
+
+.checkBoxSec span {
+    font-size: 13px;
+    color: #222222;
+}
+
+.checkBoxSec span a {
+    font-size: 14px;
+    color: var(--mainColor);
+    text-decoration: underline;
+}
+
+.formBtn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--mainColor);
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.formBtn:hover {
+    opacity: 0.9;
+}
+
+.otherlink{
+    font-size: 14px;
+    color: #222222;
+    margin: 15px 0;
+}
+
+.otherlink a{
+    color: var(--mainColor);
+}
